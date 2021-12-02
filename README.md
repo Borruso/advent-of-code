@@ -1,4 +1,4 @@
-# Advent of Code 🎅🏻
+# Advent of Code 2021 🎅🏻
 
 #### I'll be able to solve the puzzles !?
 
@@ -10,7 +10,3 @@ Author
 =======
 
 **Borruso Giuseppe <gborruso@dinamicheaziendali.it>**
-
-.. image:: https://github.com/Borruso.png?size=40px
-    :target: https://github.com/Borruso
-    :alt: Borruso
