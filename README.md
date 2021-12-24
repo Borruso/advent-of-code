@@ -1,8 +1,8 @@
 # Advent of Code 2021 🎅🏻
 
 [![About](https://img.shields.io/badge/Advent%20of%20Code%20🎄-2021-brightgreen)](https://adventofcode.com/2021/about)
-[![Days completed](https://img.shields.io/badge/day%20📅-22-blue)](https://adventofcode.com/2021)
-[![Stars](https://img.shields.io/badge/stars%20⭐-44-yellow)](https://adventofcode.com/2021/stats)
+[![Days completed](https://img.shields.io/badge/day%20📅-23-blue)](https://adventofcode.com/2021)
+[![Stars](https://img.shields.io/badge/stars%20⭐-46-yellow)](https://adventofcode.com/2021/stats)
 
 #### I'll be able to solve the puzzles !?
 
@@ -17,7 +17,7 @@
 | [day07](day07/) | **Python** | 347509, 98257206      | [day20](day20/) | **Python** | 5479, 19012              |
 | [day08](day08/) | **Python** | 303, 961734           | [day21](day21/) | **Python** | 752745, 309196008717909  |
 | [day09](day09/) | **Python** | 535, 1122700          | [day22](day22/) | **Python** | 537042, 1304385553084863 |
-| [day10](day10/) | **Python** | 167379, 2776842859    |
+| [day10](day10/) | **Python** | 167379, 2776842859    | [day23](day23/) | **Python** | 13520, 48708             |
 | [day11](day11/) | **Python** | 1585, 382             |
 | [day12](day12/) | **Python** | 4495, 131254          |
 | [day13](day13/) | **Python** | 743, RCPLAKHL         |
