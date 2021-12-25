@@ -1,8 +1,8 @@
 # Advent of Code 2021 🎅🏻
 
 [![About](https://img.shields.io/badge/Advent%20of%20Code%20🎄-2021-brightgreen)](https://adventofcode.com/2021/about)
-[![Days completed](https://img.shields.io/badge/day%20📅-24-blue)](https://adventofcode.com/2021)
-[![Stars](https://img.shields.io/badge/stars%20⭐-48-yellow)](https://adventofcode.com/2021/stats)
+[![Days completed](https://img.shields.io/badge/day%20📅-25-blue)](https://adventofcode.com/2021)
+[![Stars](https://img.shields.io/badge/stars%20⭐-50-yellow)](https://adventofcode.com/2021/stats)
 
 #### I'll be able to solve the puzzles !?
 
@@ -19,7 +19,7 @@
 | [day09](day09/) | **Python** | 535, 1122700          | [day22](day22/) | **Python** | 537042, 1304385553084863       |
 | [day10](day10/) | **Python** | 167379, 2776842859    | [day23](day23/) | **Python** | 13520, 48708                   |
 | [day11](day11/) | **Python** | 1585, 382             | [day24](day24/) | **Python** | 92928914999991, 91811211611981 |
-| [day12](day12/) | **Python** | 4495, 131254          |                 |            |                                |
+| [day12](day12/) | **Python** | 4495, 131254          | [day25](day25/) | **Python** | 507                            |
 | [day13](day13/) | **Python** | 743, RCPLAKHL         |                 |            |                                |
 
 Author
