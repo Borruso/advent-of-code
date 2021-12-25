@@ -2,30 +2,33 @@
 
 import unittest
 
-from solution import get_numbers_from_input, count_total_depths, count_total_depths_windows
+from solution import get_list_calories_from_input, find_higher_calories, count_highers_calories
 
-input_test = """199
-200
-208
-210
-200
-207
-240
-269
-260
-263"""
+input_test = """1000
+2000
+3000
+
+4000
+
+5000
+6000
+
+7000
+8000
+9000
+
+10000"""
 
 
 class TestSolution(unittest.TestCase):
-    numbers = None
 
     def setUp(self):
-        self.numbers = get_numbers_from_input(input_test)
+        self.list_calories = get_list_calories_from_input(input_test)
 
-    def test_count_total_depths(self):
-        count = count_total_depths(self.numbers)
-        self.assertEqual(count, 7)
-
-    def test_count_total_depths_windows(self):
-        count = count_total_depths_windows(self.numbers, 3)
-        self.assertEqual(count, 5)
+    def test_higher_calories_elf_carrying(self):
+        higher_calories = find_higher_calories(self.list_calories)
+        self.assertEqual(higher_calories, 24000)
+        
+    def test_count_highers_calories_elves_carrying(self):
+        highers_calories = count_highers_calories(self.list_calories, 3)
+        self.assertEqual(highers_calories, 45000)
