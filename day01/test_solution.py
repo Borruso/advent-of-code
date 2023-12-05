@@ -2,33 +2,30 @@
 
 import unittest
 
-from solution import get_list_calories_from_input, find_higher_calories, count_highers_calories
+from solution import get_calibration_value_from_input, compute_total_calibration_value
 
-input_test = """1000
-2000
-3000
+input_test1 = """1abc2
+pqr3stu8vwx
+a1b2c3d4e5f
+treb7uchet"""
 
-4000
-
-5000
-6000
-
-7000
-8000
-9000
-
-10000"""
+input_test2 = """two1nine
+eightwothree
+abcone2threexyz
+xtwone3four
+4nineeightseven2
+zoneight234
+7pqrstsixteen"""
 
 
 class TestSolution(unittest.TestCase):
 
     def setUp(self):
-        self.list_calories = get_list_calories_from_input(input_test)
+        self.calibration_value1 = get_calibration_value_from_input(input_test1)
+        self.calibration_value2 = get_calibration_value_from_input(input_test2)
 
-    def test_higher_calories_elf_carrying(self):
-        higher_calories = find_higher_calories(self.list_calories)
-        self.assertEqual(higher_calories, 24000)
-        
-    def test_count_highers_calories_elves_carrying(self):
-        highers_calories = count_highers_calories(self.list_calories, 3)
-        self.assertEqual(highers_calories, 45000)
+    def test_total_calibration_value(self):
+        total_calibration_value1 = compute_total_calibration_value(self.calibration_value1, False)
+        self.assertEqual(total_calibration_value1, 142)
+        total_calibration_value2 = compute_total_calibration_value(self.calibration_value2, True)
+        self.assertEqual(total_calibration_value2, 281)

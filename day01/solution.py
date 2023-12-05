@@ -1,37 +1,52 @@
 # -*- coding: utf-8 -*-
 
-def get_list_calories_from_input(data):
-    return data.split("\n\n")
+NUMBERS = {
+    "one": "1",
+    "two": "2",
+    "three": "3",
+    "four": "4",
+    "five": "5",
+    "six": "6",
+    "seven": "7",
+    "eight": "8",
+    "nine": "9",
+}
+
+
+def get_calibration_value_from_input(data):
+    return data.split("\n")
 
 
 def read_file(filename):
     with open(filename) as file:
         data = file.read()
-    return get_list_calories_from_input(data)
+    return get_calibration_value_from_input(data)
 
 
-def count_calories(calories):
-    return [
-        sum(int(food) for food in calorie.split("\n"))
-        for calorie in calories
-    ]
+def compute_total_calibration_value(calibration_value, replace_calibration):
+    total = 0
+    for record in calibration_value:
+        if replace_calibration:
+            for num, digit in NUMBERS.items():
+                # don't remove the word, since some words are used twice
+                record = record.replace(num, f"{num[0]}{digit}{num[-1]}")
 
-
-def find_higher_calories(calories):
-    all_calories = count_calories(calories)
-    return max(all_calories)
-
-
-def count_highers_calories(calories, top):
-    all_calories = sorted(count_calories(calories), key=int, reverse=True)
-    return sum(all_calories[:top])
+        list_number = [
+            char
+            for char in record
+            if char.isnumeric()
+        ]
+        if list_number:
+            number = list_number[0] + list_number[-1]
+            total += int(number)
+    return total
 
 
 if __name__ == "__main__":
-    list_calories = read_file("input.txt")
+    calibration_value = read_file("input.txt")
 
-    first_solution = find_higher_calories(list_calories)
+    first_solution = compute_total_calibration_value(calibration_value, False)
     print(first_solution)
 
-    second_solution = count_highers_calories(list_calories, 3)
+    second_solution = compute_total_calibration_value(calibration_value, True)
     print(second_solution)
